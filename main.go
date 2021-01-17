@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"todo_app/app/models"
 )
 
@@ -32,11 +31,17 @@ func main() {
 	// t, _ := models.GetTodo(1)
 	// fmt.Println(t)
 
-	user, _ := models.GetUser(2)
-	t, _ := user.GetTodosByUser()
-	fmt.Println(t)
+	// user, _ := models.GetUser(2)
+	// t, _ := user.GetTodosByUser()
+	// fmt.Println(t)
 	// user.CreateTodo("Second Todo")
 
 	// t, _ := models.GetTodos()
+	// fmt.Println(t)
+
+	t, _ := models.GetTodo(1)
+	t.DeleteTodo()
+	// t.Content = "Update Todo"
+	// t.UpdateTodo()
 	// fmt.Println(t)
 }
