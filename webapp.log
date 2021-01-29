@@ -1,1 +1,661 @@
 2021/01/13 22:20:58 users.go:33: sql: converting argument $1 type: unsupported type func() uuid.UUID, a func
+2021/01/30 00:22:23 server.go:3095: http: panic serving 192.168.3.12:54907: template: top.html:1: unexpected "content" in define clause
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc00010cf00)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00018c080)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000aa000, 0x44b9500, 0x459d260, 0xc00004fb38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000aa000, 0xc00009e000)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000aa000, 0xc00009e000)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000aa000, 0xc00009e000)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000aa000, 0xc00009e000)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00010cf00, 0x45aae60, 0xc000098000)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:22:23 server.go:3095: http: panic serving 192.168.3.12:54908: template: top.html:1: unexpected "content" in define clause
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc00010cfa0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00018c120)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000aa0e0, 0x44b9500, 0x459d260, 0xc00014bb38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000aa0e0, 0xc00014c100)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000aa0e0, 0xc00014c100)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000aa0e0, 0xc00014c100)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000aa0e0, 0xc00014c100)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00010cfa0, 0x45aae60, 0xc0000265c0)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:22:23 server.go:3095: http: panic serving 192.168.3.12:54909: template: top.html:1: unexpected "content" in define clause
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc0000c4000)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc000013090)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000aa1c0, 0x44b9500, 0x459d260, 0xc00004fb38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000aa1c0, 0xc00009e500)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000aa1c0, 0xc00009e500)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000aa1c0, 0xc00009e500)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000aa1c0, 0xc00009e500)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000c4000, 0x45aae60, 0xc000098380)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:32 server.go:3095: http: panic serving 192.168.3.12:54920: template: top.html:1: unexpected "content" in define clause
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc00010cf00)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00018e090)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000a8000, 0x44b9500, 0x459d260, 0xc00004fb38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000a8000, 0xc00014c200)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000a8000, 0xc00014c200)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000a8000, 0xc00014c200)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000a8000, 0xc00014c200)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00010cf00, 0x45aae60, 0xc000098000)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:32 server.go:3095: http: panic serving 192.168.3.12:54921: template: top.html:1: unexpected "content" in define clause
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc00010cfa0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00009a180)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000a80e0, 0x44b9500, 0x459d260, 0xc00014bb38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000a80e0, 0xc00014c100)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000a80e0, 0xc00014c100)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000a80e0, 0xc00014c100)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000a80e0, 0xc00014c100)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00010cfa0, 0x45aae60, 0xc0000265c0)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:32 server.go:3095: http: panic serving 192.168.3.12:54922: template: top.html:1: unexpected "content" in define clause
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0001d8000)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00009a2a0)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000a81c0, 0x44b9500, 0x459d260, 0xc000186b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000a81c0, 0xc0001a8200)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000a81c0, 0xc0001a8200)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000a81c0, 0xc0001a8200)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000a81c0, 0xc0001a8200)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001d8000, 0x45aae60, 0xc000190100)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:44 server.go:3095: http: panic serving 192.168.3.12:54923: template: top.html:1: unexpected "content" in define clause
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc00010d040)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00018e1d0)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0001e8000, 0x44b9500, 0x459d260, 0xc000187b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0001e8000, 0xc0001a8300)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0001e8000, 0xc0001a8300)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0001e8000, 0xc0001a8300)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0001e8000, 0xc0001a8300)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00010d040, 0x45aae60, 0xc000190180)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:44 server.go:3095: http: panic serving 192.168.3.12:54924: template: top.html:1: unexpected "content" in define clause
+goroutine 10 [running]:
+net/http.(*conn).serve.func1(0xc00010d0e0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc0000130e0)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000a82a0, 0x44b9500, 0x459d260, 0xc000053b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000a82a0, 0xc00014c300)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000a82a0, 0xc00014c300)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000a82a0, 0xc00014c300)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000a82a0, 0xc00014c300)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00010d0e0, 0x45aae60, 0xc0000266c0)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:44 server.go:3095: http: panic serving 192.168.3.12:54925: template: top.html:1: unexpected "content" in define clause
+goroutine 28 [running]:
+net/http.(*conn).serve.func1(0xc0000dc000)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00018e280)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000a8380, 0x44b9500, 0x459d260, 0xc000053b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000a8380, 0xc0000bcb00)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000a8380, 0xc0000bcb00)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000a8380, 0xc0000bcb00)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000a8380, 0xc0000bcb00)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000dc000, 0x45aae60, 0xc0000986c0)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:45 server.go:3095: http: panic serving 192.168.3.12:54926: template: top.html:1: unexpected "content" in define clause
+goroutine 31 [running]:
+net/http.(*conn).serve.func1(0xc0000dc0a0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00009a4a0)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000a8460, 0x44b9500, 0x459d260, 0xc000053b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000a8460, 0xc0000bce00)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000a8460, 0xc0000bce00)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000a8460, 0xc0000bce00)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000a8460, 0xc0000bce00)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000dc0a0, 0x45aae60, 0xc000098840)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:45 server.go:3095: http: panic serving 192.168.3.12:54927: template: top.html:1: unexpected "content" in define clause
+goroutine 32 [running]:
+net/http.(*conn).serve.func1(0xc0000dc140)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00018e3a0)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0001e80e0, 0x44b9500, 0x459d260, 0xc000186b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0001e80e0, 0xc0000bcf00)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0001e80e0, 0xc0000bcf00)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0001e80e0, 0xc0000bcf00)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0001e80e0, 0xc0000bcf00)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000dc140, 0x45aae60, 0xc0000988c0)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:45 server.go:3095: http: panic serving 192.168.3.12:54928: template: top.html:1: unexpected "content" in define clause
+goroutine 52 [running]:
+net/http.(*conn).serve.func1(0xc0000dc1e0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00018e420)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000a8540, 0x44b9500, 0x459d260, 0xc000053b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000a8540, 0xc0000bd400)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000a8540, 0xc0000bd400)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000a8540, 0xc0000bd400)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000a8540, 0xc0000bd400)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000dc1e0, 0x45aae60, 0xc000098b80)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:45 server.go:3095: http: panic serving 192.168.3.12:54929: template: top.html:1: unexpected "content" in define clause
+goroutine 44 [running]:
+net/http.(*conn).serve.func1(0xc0001d80a0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc000013210)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0001560e0, 0x44b9500, 0x459d260, 0xc000187b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0001560e0, 0xc0001a9200)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0001560e0, 0xc0001a9200)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0001560e0, 0xc0001a9200)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0001560e0, 0xc0001a9200)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001d80a0, 0x45aae60, 0xc000190840)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:45 server.go:3095: http: panic serving 192.168.3.12:54930: template: top.html:1: unexpected "content" in define clause
+goroutine 45 [running]:
+net/http.(*conn).serve.func1(0xc0001d8140)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00009a5f0)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0001561c0, 0x44b9500, 0x459d260, 0xc000186b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0001561c0, 0xc0001a9100)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0001561c0, 0xc0001a9100)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0001561c0, 0xc0001a9100)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0001561c0, 0xc0001a9100)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001d8140, 0x45aae60, 0xc0001907c0)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:45 server.go:3095: http: panic serving 192.168.3.12:54931: template: top.html:1: unexpected "content" in define clause
+goroutine 66 [running]:
+net/http.(*conn).serve.func1(0xc00010d180)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc0000133c0)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0001562a0, 0x44b9500, 0x459d260, 0xc000186b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0001562a0, 0xc00014cd00)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0001562a0, 0xc00014cd00)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0001562a0, 0xc00014cd00)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0001562a0, 0xc00014cd00)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00010d180, 0x45aae60, 0xc000026bc0)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:45 server.go:3095: http: panic serving 192.168.3.12:54932: template: top.html:1: unexpected "content" in define clause
+goroutine 70 [running]:
+net/http.(*conn).serve.func1(0xc00010d220)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc000013500)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc000156380, 0x44b9500, 0x459d260, 0xc000187b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc000156380, 0xc00014d300)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc000156380, 0xc00014d300)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc000156380, 0xc00014d300)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc000156380, 0xc00014d300)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00010d220, 0x45aae60, 0xc000026ec0)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:45 server.go:3095: http: panic serving 192.168.3.12:54933: template: top.html:1: unexpected "content" in define clause
+goroutine 71 [running]:
+net/http.(*conn).serve.func1(0xc00010d2c0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00018e570)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0001e81c0, 0x44b9500, 0x459d260, 0xc000186b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0001e81c0, 0xc00014d200)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0001e81c0, 0xc00014d200)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0001e81c0, 0xc00014d200)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0001e81c0, 0xc00014d200)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00010d2c0, 0x45aae60, 0xc000026e40)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:45 server.go:3095: http: panic serving 192.168.3.12:54934: template: top.html:1: unexpected "content" in define clause
+goroutine 56 [running]:
+net/http.(*conn).serve.func1(0xc0000dc280)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00009a710)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000a8620, 0x44b9500, 0x459d260, 0xc000053b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000a8620, 0xc0000bd900)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000a8620, 0xc0000bd900)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000a8620, 0xc0000bd900)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000a8620, 0xc0000bd900)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000dc280, 0x45aae60, 0xc000098e00)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:45 server.go:3095: http: panic serving 192.168.3.12:54935: template: top.html:1: unexpected "content" in define clause
+goroutine 60 [running]:
+net/http.(*conn).serve.func1(0xc0000dc320)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc000013620)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc000156460, 0x44b9500, 0x459d260, 0xc000187b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc000156460, 0xc00014d800)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc000156460, 0xc00014d800)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc000156460, 0xc00014d800)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc000156460, 0xc00014d800)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000dc320, 0x45aae60, 0xc000027140)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:45 server.go:3095: http: panic serving 192.168.3.12:54936: template: top.html:1: unexpected "content" in define clause
+goroutine 61 [running]:
+net/http.(*conn).serve.func1(0xc0000dc3c0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00018e690)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0001e82a0, 0x44b9500, 0x459d260, 0xc000053b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0001e82a0, 0xc0000bde00)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0001e82a0, 0xc0000bde00)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0001e82a0, 0xc0000bde00)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0001e82a0, 0xc0000bde00)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000dc3c0, 0x45aae60, 0xc000099080)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:45 server.go:3095: http: panic serving 192.168.3.12:54937: template: top.html:1: unexpected "content" in define clause
+goroutine 78 [running]:
+net/http.(*conn).serve.func1(0xc00010d360)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00018e710)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc000156540, 0x44b9500, 0x459d260, 0xc000187b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc000156540, 0xc00014dd00)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc000156540, 0xc00014dd00)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc000156540, 0xc00014dd00)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc000156540, 0xc00014dd00)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00010d360, 0x45aae60, 0xc0000273c0)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:46 server.go:3095: http: panic serving 192.168.3.12:54938: template: top.html:1: unexpected "content" in define clause
+goroutine 81 [running]:
+net/http.(*conn).serve.func1(0xc00010d400)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc0000137f0)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc000156620, 0x44b9500, 0x459d260, 0xc00004fb38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc000156620, 0xc0000bdf00)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc000156620, 0xc0000bdf00)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc000156620, 0xc0000bdf00)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc000156620, 0xc0000bdf00)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00010d400, 0x45aae60, 0xc000099100)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:46 server.go:3095: http: panic serving 192.168.3.12:54939: template: top.html:1: unexpected "content" in define clause
+goroutine 98 [running]:
+net/http.(*conn).serve.func1(0xc00010d4a0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00009a870)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000a8700, 0x44b9500, 0x459d260, 0xc000187b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000a8700, 0xc0002cc000)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000a8700, 0xc0002cc000)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000a8700, 0xc0002cc000)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000a8700, 0xc0002cc000)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00010d4a0, 0x45aae60, 0xc0000275c0)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:46 server.go:3095: http: panic serving 192.168.3.12:54940: template: top.html:1: unexpected "content" in define clause
+goroutine 85 [running]:
+net/http.(*conn).serve.func1(0xc0001d81e0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00009a910)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0001e8380, 0x44b9500, 0x459d260, 0xc000053b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0001e8380, 0xc0001a9d00)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0001e8380, 0xc0001a9d00)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0001e8380, 0xc0001a9d00)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0001e8380, 0xc0001a9d00)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001d81e0, 0x45aae60, 0xc000190d40)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:46 server.go:3095: http: panic serving 192.168.3.12:54941: template: top.html:1: unexpected "content" in define clause
+goroutine 114 [running]:
+net/http.(*conn).serve.func1(0xc0000dc460)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00009aa50)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000a87e0, 0x44b9500, 0x459d260, 0xc000187b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000a87e0, 0xc000334600)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000a87e0, 0xc000334600)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000a87e0, 0xc000334600)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000a87e0, 0xc000334600)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000dc460, 0x45aae60, 0xc000099480)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:46 server.go:3095: http: panic serving 192.168.3.12:54942: template: top.html:1: unexpected "content" in define clause
+goroutine 115 [running]:
+net/http.(*conn).serve.func1(0xc0000dc500)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc000013900)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc000156700, 0x44b9500, 0x459d260, 0xc000050b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc000156700, 0xc000334700)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc000156700, 0xc000334700)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc000156700, 0xc000334700)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc000156700, 0xc000334700)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000dc500, 0x45aae60, 0xc000099500)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:46 server.go:3095: http: panic serving 192.168.3.12:54943: template: top.html:1: unexpected "content" in define clause
+goroutine 119 [running]:
+net/http.(*conn).serve.func1(0xc0000dc5a0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00009ab80)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000a88c0, 0x44b9500, 0x459d260, 0xc000187b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000a88c0, 0xc000334c00)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000a88c0, 0xc000334c00)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000a88c0, 0xc000334c00)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000a88c0, 0xc000334c00)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000dc5a0, 0x45aae60, 0xc000099780)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:46 server.go:3095: http: panic serving 192.168.3.12:54944: template: top.html:1: unexpected "content" in define clause
+goroutine 105 [running]:
+net/http.(*conn).serve.func1(0xc00010d540)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00009acb0)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000a89a0, 0x44b9500, 0x459d260, 0xc000187b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000a89a0, 0xc000335100)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000a89a0, 0xc000335100)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000a89a0, 0xc000335100)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000a89a0, 0xc000335100)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00010d540, 0x45aae60, 0xc000099a00)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:46 server.go:3095: http: panic serving 192.168.3.12:54945: template: top.html:1: unexpected "content" in define clause
+goroutine 106 [running]:
+net/http.(*conn).serve.func1(0xc00010d5e0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00018e8d0)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0001e8460, 0x44b9500, 0x459d260, 0xc000050b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0001e8460, 0xc0002cc900)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0001e8460, 0xc0002cc900)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0001e8460, 0xc0002cc900)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0001e8460, 0xc0002cc900)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00010d5e0, 0x45aae60, 0xc000027a40)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/01/30 00:23:46 server.go:3095: http: panic serving 192.168.3.12:54946: template: top.html:1: unexpected "content" in define clause
+goroutine 91 [running]:
+net/http.(*conn).serve.func1(0xc0001d8280)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cc6e0, 0xc00009add0)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45aa460, 0xc0000a8a80, 0x44b9500, 0x459d260, 0xc000050b38, 0x2, 0x2)
+	/Users/irieyuma/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45aa460, 0xc0000a8a80, 0xc000276400)
+	/Users/irieyuma/go/src/todo_app/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x454d7d8, 0x45aa460, 0xc0000a8a80, 0xc000276400)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c7520, 0x45aa460, 0xc0000a8a80, 0xc000276400)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000156000, 0x45aa460, 0xc0000a8a80, 0xc000276400)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001d8280, 0x45aae60, 0xc0001910c0)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
