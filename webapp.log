@@ -659,3 +659,7 @@ net/http.(*conn).serve(0xc0001d8280, 0x45aae60, 0xc0001910c0)
 	/usr/local/go/src/net/http/server.go:1925 +0x8ad
 created by net/http.(*Server).Serve
 	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/07 01:45:56 route_auth.go:40: no such column: name
+2021/02/07 01:50:33 route_auth.go:40: no such column: name
+2021/02/07 01:53:38 route_auth.go:40: no such column: name
+2021/02/07 01:54:36 route_auth.go:40: no such column: name
